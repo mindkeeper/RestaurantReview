@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestaureantReview.iml" filepath="$PROJECT_DIR$/.idea/modules/RestaureantReview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RestaureantReview.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RestaureantReview.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RestaureantReview.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RestaureantReview.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RestaureantReview.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RestaureantReview.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RestaureantReview.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RestaureantReview.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
