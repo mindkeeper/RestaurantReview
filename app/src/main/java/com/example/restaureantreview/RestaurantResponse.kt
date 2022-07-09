@@ -49,7 +49,7 @@ data class CustomerReviewsItem(
 )
 
 data class PostReviewResponse(
-	@field:SerializedName("customerReview")
+	@field:SerializedName("customerReviews")
 	val customerReviews: List<CustomerReviewsItem>,
 
 	@field:SerializedName("error")

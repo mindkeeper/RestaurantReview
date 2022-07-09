@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         findRestaurant()
 
         binding.btnSend.setOnClickListener{
-            postReview(binding.edReview.toString())
+            postReview(binding.edReview.text.toString())
             val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             imm.hideSoftInputFromWindow(it.windowToken, 0)
         }
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
     private fun findRestaurant(){
         showLoading(true)
         val client = ApiConfig.getApiService().getRestaurant(RESTAURANT_ID)
-        client.enqueue(object: retrofit2.Callback<RestaurantResponse>{
+        client.enqueue(object: Callback<RestaurantResponse>{
             override fun onResponse(
                 call: Call<RestaurantResponse>,
                 response: Response<RestaurantResponse>
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
     private fun postReview(review: String){
         showLoading(true)
         val client = ApiConfig.getApiService().postReview(RESTAURANT_ID, "Nur Cholis Majid", review)
-        client.enqueue(object : retrofit2.Callback<PostReviewResponse>{
+        client.enqueue(object : Callback<PostReviewResponse>{
             override fun onResponse(
                 call: Call<PostReviewResponse>,
                 response: Response<PostReviewResponse>
